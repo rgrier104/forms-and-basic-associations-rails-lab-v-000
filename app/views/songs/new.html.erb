@@ -11,8 +11,8 @@
   <%= f.collection_select :genre_name, Genre.all, :name, :name %>
   <br />
   <datalist id="song_genre_id">
-   <% Genre.all.each do |category| %>
-     <option value="<%= category.name %>">
+   <% Genre.all.each do |genre| %>
+     <option value="<%= genre.name %>">
    <% end %>
  </datalist>
 
