@@ -10,11 +10,7 @@
   <%= f.label :song_genre_id %>
   <%= f.collection_select :genre_name, Genre.all, :name, :name %>
   <br />
-  <datalist id="song_genre_id">
-   <% Genre.all.each do |genre| %>
-     <option value="<%= genre.name %>">
-   <% end %>
- </datalist>
+
  <input id = "song_notes_1" name="song[note_ids][]">
  <input id = "song_notes_2" name="song[note_ids][]">
  <input id = "song_notes_3" name="song[note_ids][]">
