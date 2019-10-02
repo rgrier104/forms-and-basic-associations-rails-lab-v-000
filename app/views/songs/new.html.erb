@@ -10,6 +10,11 @@
   <%= f.label :song_genre_id %>
   <%= f.collection_select :genre_name, Genre.all, :name, :name %>
   <br />
+  <datalist id="song_genre_id">
+   <% Genre.all.each do |category| %>
+     <option value="<%= category.name %>">
+   <% end %>
+ </datalist>
   
 
 
